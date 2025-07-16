@@ -44,7 +44,7 @@ Use [@BotFather](https://t.me/botfather) to create your bot:
 
 ## 3. Configure the Application
 
-Create a `.env` file in your project’s root with the following content:
+Create a `.env` file in project’s root with the following content:
 
 ```
 BOT_TOKEN="your_telegram_bot_token"
@@ -79,7 +79,9 @@ This will build and start the bot in the background.
 
 Make sure your environment is set up with dependencies (`uv sync`), then run:
 
-```
+```bash
+    source .venv/bin/activate
+    prisma db push
     uv run main.py
 ```
 
