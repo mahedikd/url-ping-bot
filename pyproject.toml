@@ -1,0 +1,12 @@
+[project]
+name = "pytbot-ping-url"
+version = "0.1.1"
+description = "A simple py server ping system like uptime-kuma, use telegram to add and delete ping url"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "prisma>=0.15.0",
+    "python-dotenv>=1.1.0",
+    "python-telegram-bot>=22.1",
+]
+typeCheckingMode = "strict"

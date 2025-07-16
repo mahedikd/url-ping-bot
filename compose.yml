@@ -1,0 +1,11 @@
+services:
+  py-url-ping:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: py-url-ping
+    volumes:
+      - ./prisma:/app/prisma
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    restart: always
